@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 140vh;
+    background-image: url("../images/grips.png");
+    /* background-color: #3498db; */
+    background-size: cover;
+    background-position: center;
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 81%, 63% 81%, 49% 93%, 33% 81%, 0 81%); */
+}
+
+.navbar ul{
+    list-style-type: none;
+    flex-direction: row;
+}
+
+.navbar ul li{
+    text-align: right;
+    text-decoration: none;
+    padding: 20px 25px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 40px 25px;
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.navbar ul li a:hover{
+    color: #fff;
+}
+
+.container{
+    width: 80%;
+    height: 101vh;
+    background-color: black;
+    opacity: 0.65;
+    margin: 30px auto;
+    padding: 0px 25px;
+    border-radius: 3rem;
+}
+
+.butt{
+    text-align: center;
+}
+.btn{
+    padding: 10px 20px;
+    position: relative;
+    background-color: #03544e;
+    margin: 20px;
+    color: white;
+    border: 2px solid #03544e;
+    background: none;
+    transition: 0.8s;
+    overflow: hidden;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 200;
+
+}
+
+.btn1, .btn2{
+    color: #fff;
+}
+
+.btn1:hover, .btn2:hover{
+    color: #000;
+}
+
+.btn::before{
+    content: "";
+    width: 100%;
+    background: #03544e;
+    position: absolute;
+    left: 0;
+    transition: 0.8s;
+    z-index: -1;
+}
+
+.btn1::before{
+    top: 0;
+    height: 180%;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn2::before{
+    bottom: 0;
+    height: 180%;
+    border-radius: 50% 50% 0 0;
+}
+
+.btn1:hover::before{
+    height: 0;
+}
+
+.btn2:hover::before{
+    height: 0;
+}
+
+thead tr{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 150px;
+    text-align: center;
+}
+
+thead th{
+    padding: 10px 80px;
+}
+
+td{
+    padding: 18px 0px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bar1{
+    background-color: #fff;
+    opacity: 0.80;
+}
+
+.bar1 td{
+    color: black;
+}
+
+.bar2{
+    background-color: black;
+    opacity: 0.80;
+}
+
+/* Modal Section */
+
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content{
+    width: 500px;
+    height: 380px;
+    background-color: white;
+    opacity: 1;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+}
+
+input{
+    width: 70%;
+    display: block;
+    margin: 15px auto;
+    padding: 10px 10px;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+}
+
+.btn{ 
+    background: none;
+    background-color: #4d7774;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 10px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 0.8s;
+    cursor: pointer;
+    font-weight: 200;
+} 
+
+.body-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modalcontent{
+    width: 500px;
+    height: 380px;
+    color: black;
+    background-color: white;
+    opacity: 1;
+    border-radius: 4px;
+    text-align: center;
+    position: absolute;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.modal-body{
+    color: #000;
+    font-size: 15px;
+    padding: 15px 10px;
+    font-weight: 200;
+}
+
+.closeme{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+}
+
+ol{
+    padding: 12px;
+}

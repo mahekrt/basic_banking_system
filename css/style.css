@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/grips.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* nav{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    opacity: 0.65;
+} */
+
+.navbar ul{
+    list-style-type: none;
+    flex-direction: row;
+}
+
+.navbar ul li{
+    text-align: right;
+    text-decoration: none;
+    padding: 20px 25px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 40px 25px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.navbar ul li a:hover{
+    color: #fff;
+}
+
+.container1{
+    width: 550px;
+    height: 80px;
+    background-color: black;
+    opacity: 0.65;
+    margin: 160px 380px 0px 400px;
+    /* padding: 10px 20px; */
+    border-radius: 2em;
+    box-shadow: 2px 4px 9px 1px rgb(26, 25, 25);
+}
+.container1 h1{
+    word-spacing: 10px;
+    text-transform: capitalize;
+}
+
+.container1:hover{
+    box-shadow: 2px 4px 9px 1px #03544e;
+}
+
+.img1, .img2{
+    width: 80px;
+    height: 80px;
+}
+.img1{
+    /* margin-bottom: 13px; */
+    margin-left: 25px; 
+}
+
+.img2{
+    margin-top: -50px;
+    margin-left: 465px;
+}
+
+.bank{
+    text-align: center;
+    color: #fff;
+    /* padding: 25px; */
+    margin-top: -60px;
+} 
+.piggy{
+    margin-top: -20px;
+    margin-left: 1100px;
+}
+.butt{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.btn{
+    padding: 10px 20px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    background-color: #03544e;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 200;
+    background: none;
+    border: 2px solid #03544e;
+    transition: 0.8s;
+    overflow: hidden;
+}
+
+.btn1, .btn2{
+    color: #fff;
+}
+
+.btn1:hover, .btn2:hover{
+    color: #000;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    /* height: 0%; */
+    background: #03544e;
+    transition: 0.8s;
+    z-index: -1;
+}
+
+.btn1::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    height: 180%;
+}
+
+.btn2::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    height: 180%;
+}
+
+.btn1:hover::before{
+    height: 0%;
+}
+
+.btn2:hover::before{
+    height: 0%;
+}
+
+.container2{
+    background-color: #03544e;
+    margin-top: 210px;
+    border-radius: 3rem;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 81%, 63% 81%, 49% 93%, 33% 81%, 0 81%);
+
+}
+
+
+.vector img{
+    width: 700px;
+    height: 800px;
+    margin-top: -140px;
+    margin-left: -50px;
+}
+
+.right{
+    margin-top: -600px;
+    margin-left: 800px;
+    text-align: center;
+
+}
+
+.content{
+    padding: 30px;
+}
+
+.content h2{
+    color: rgb(9, 241, 152);
+}
+
+.content p{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+hr{
+    color: aqua;
+    width: 450px;
+    margin-left: 50px;
+}
