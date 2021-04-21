@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer.page</title>
+    <link rel="stylesheet" href="css/customer.css">
+    <!-- <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"> -->
+</head>
+
+<body>
+    <section class="wrapper">
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="aboutus.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="butt">
+            <button class="btn btn1" id="button" type="button">Send Money</button>
+            <button class="btn btn2" id="buton" type="button">Transaction History</button>
+        </div>
+    </section>
+
+    <!-- Table Section -->
+    <section class="table">
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Name</th>
+                        <th>Email Id</th>
+                        <th>Bank Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bar1">
+                        <td>1</td>
+                        <td>Mahek Tardeja</td>
+                        <td>mahek@gmail.com</td>
+                        <td>
+                            <p id="mahekBankBalance">25000</p>
+                        </td>
+                    </tr>
+                    <tr class="bar2">
+                        <td>2</td>
+                        <td>Ekta Shetty</td>
+                        <td>ekta@gmail.com</td>
+                        <td>
+                            <p id="ektaBankBalance">500000</p>
+                        </td>
+                    </tr>
+                    <tr class="bar1">
+                        <td>3</td>
+                        <td>Ritika Kesari</td>
+                        <td>ritika@gmail.com</td>
+                        <td>
+                            <p id="ritikaBankBalance">560000</p>
+                        </td>
+                    </tr>
+                    <tr class="bar2">
+                        <td>4</td>
+                        <td>Rohan Maalu</td>
+                        <td>rohan@gmail.com</td>
+                        <td>
+                            <p id="rohanBankBalance">30000</p>
+                        </td>
+                    </tr>
+                    <tr class="bar1">
+                        <td>5</td>
+                        <td>Mishti Daasi</td>
+                        <td>mishti@gmail.com</td>
+                        <td>
+                            <p id="mishtiBankBalance">900000</p>
+                        </td>
+                    </tr>
+                    <tr class="bar2">
+                        <td>6</td>
+                        <td>Pranav Patil</td>
+                        <td>pranav@gmail.com</td>
+                        <td>
+                            <p id="pranavBankBalance">450000</p>
+                        </td>
+                    </tr>
+                    <tr class="bar1">
+                        <td>7</td>
+                        <td>Maahi Ved </td>
+                        <td>maahi@gmail.com</td>
+                        <td>
+                            <p id="maahiBankBalance">30000</p>
+                        </td>
+                    </tr>
+                    <tr class="bar2">
+                        <td>8</td>
+                        <td>Dev Agasti</td>
+                        <td>dev@gmail.com</td>
+                        <td>
+                            <p id="devBankBalance">50000</p>
+                        </td>
+                    </tr>
+                    <tr class="bar1">
+                        <td>9</td>
+                        <td>Nishta Kapoor</td>
+                        <td>nishta@gmail.com</td>
+                        <td>
+                            <p id="nishtaBankBalance">24000</p>
+                        </td>
+                    </tr>
+                    <tr class="bar2">
+                        <td>10</td>
+                        <td>Pooja Aahuja</td>
+                        <td>pooja@gmail.com</td>
+                        <td>
+                            <p id="poojaBankBalance">180000</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Modal Section -->
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div class="close">+</div>
+            <img src="images/man vector.png" width="100px" height="100px">
+            <form action="#">
+                <input type="text" id="sendKaro" placeholder="Sender's username...@email.com">
+                <input type="text" id="paisaMillega" placeholder="Recipient's username...@email.com">
+                <input type="text" id="enterAmount" placeholder="Enter Amount">
+                <button type="button" class="btn" onclick="sendMoney()">Send Money</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Transaction History Section -->
+    <div class="body-modal">
+        <div class="modalcontent">
+            <div class="closeme">+</div>
+            <h2 class="modaltitle">Transaction History</h2>
+            <div class="modal-body">
+                <ol id="transaction-body">
+                
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+</body>
+
+</html>
